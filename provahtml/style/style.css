@@ -1,0 +1,81 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: bisque;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #0167ff8e;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        main {
+            margin-top: 60px; /* Para compensar a altura do cabeçalho fixo */
+        }
+        .container {
+            display: flex;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 30%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #0167ff8e;
+        }
+        tr{
+            background-color: bisque;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .grid-item {
+            border: 1px solid bisque;
+            padding: 10px;
+            text-align: center;
+        }
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            height: auto;
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        section{
+            background-color: black;
+            width: 100%;
+        }
+        p{
+            color: bisque;
+        }
